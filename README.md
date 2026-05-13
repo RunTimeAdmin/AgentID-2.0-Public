@@ -10,6 +10,8 @@ This repository contains public documentation, SDK integration guides, and conce
 
 Countersig 2.0 is a production-grade identity and trust platform purpose-built for autonomous AI agents. It provides verifiable identity, multi-chain credential binding, reputation scoring, and machine-to-machine authentication — enabling agents to prove who they are, what they can do, and why they should be trusted.
 
+Countersig is the identity and trust layer within the broader CounterAegis platform.
+
 > **Note:** For source code access, see the private repository. This repo contains public documentation, integration guides, and conceptual architecture.
 
 ## Live Deployment
@@ -17,6 +19,7 @@ Countersig 2.0 is a production-grade identity and trust platform purpose-built f
 - **Frontend**: [countersig.com](https://countersig.com)
 - **API**: [api.countersig.com](https://api.countersig.com/health)
 - **Documentation**: [Wiki](https://github.com/RunTimeAdmin/Countersig-Public/wiki)
+- **Platform**: [counteraegis.com](https://counteraegis.com)
 
 ## Key Features
 
@@ -106,7 +109,7 @@ Countersig 2.0 is built around a **pluggable, multi-provider authentication arch
                                           │
                              ┌────────────▼────────────┐
                              │    External Services    │
-                             │ Stripe Billing          │
+                             │ CounterAegis Platform   │
                              │ URLhaus Threat Feed     │
                              └─────────────────────────┘
 ```
@@ -130,18 +133,17 @@ This is a documentation and concepts repository. To integrate with Countersig, u
 
 For deployment and self-hosting guides, see [docs/DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md).
 
-## Billing & Plans
+## Packaging & Pricing
 
-Countersig 2.0 includes integrated billing and plan management via **Stripe**:
+Countersig public packaging follows a Developer/Production split:
 
 | Tier | Price | Included |
 |------|-------|----------|
-| **Free** | $0/mo | Basic agent registration and verification, 10 whitelist destinations |
-| **Starter** | $29/mo | Higher quotas, API key access, audit logs, 50 whitelist destinations |
-| **Professional** | $99/mo | Full platform access, advanced policies, priority support, 500 whitelist destinations |
-| **Enterprise** | Custom | Dedicated infrastructure, SLAs, custom integrations, unlimited whitelist destinations |
+| **Developer** | Free for prototyping and side projects | Self-serve setup, single-product usage, SDK and API quickstart path |
+| **Production** | Starts at **$30K/year** | Production scope, compliance alignment, and full CounterAegis platform path |
 
-**Usage-based metering** tracks attestations, verifications, badge calls, and token issuances against plan quotas. Stripe handles payment processing, and users can manage their plan via the **/settings** page in the frontend.
+For production scoping, use the CounterAegis sales call:
+`https://calendly.com/ccie14019/enterprise-consultation`
 
 ## API Documentation
 

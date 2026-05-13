@@ -183,16 +183,15 @@ Bundles include a `Cache-Control` header with TTL. SDKs and gateways cache bundl
 
 ## 9. Pricing Implications
 
-The Trust Layer changes Countersig's value proposition from identity-only to identity + enforcement. Pricing tiers reflect this:
+The Trust Layer changes Countersig's value proposition from identity-only to identity + enforcement. Public packaging now follows Developer/Production tiers:
 
-| Tier | Price | Whitelist Limit | Enforcement | Audit Retention |
-|------|-------|-----------------|-------------|-----------------|
-| **Free** | $0 | 10 destinations | Identity only | — |
-| **Starter** | $29/mo | 50 destinations | SDK | — |
-| **Professional** | $99/mo | 500 destinations | SDK + Gateway docs | 90 days |
-| **Enterprise** | Custom | Unlimited | SDK + Gateway + SLA | 1 year |
+| Tier | Price | Enforcement Path | Typical Use |
+|------|-------|------------------|-------------|
+| **Developer** | Free for prototyping and side projects | SDK-first, self-serve | Early integration and team validation |
+| **Production** | Starts at **$30K/year** | SDK + Gateway + operational controls | Live workloads, compliance and legal review |
 
-The gateway is free and open-source. Revenue comes from the backend service (closed source), audit retention, and the upcoming AI-curated threat intelligence feed.
+The gateway remains open source. Production scoping routes through the CounterAegis platform sales path:
+`https://calendly.com/ccie14019/enterprise-consultation`
 
 ---
 

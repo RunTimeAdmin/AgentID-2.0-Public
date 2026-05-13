@@ -131,15 +131,15 @@ import { TrustBadge, ReputationBreakdown } from '@countersig/react';
 
 ## Pricing
 
-| | Free | Starter ($29/mo) | Professional ($99/mo) | Enterprise |
-|---|---|---|---|---|
-| Attestations | 100 | 5,000 | 50,000 | Unlimited |
-| Verifications | 50 | 1,000 | 10,000 | Unlimited |
-| Badge Calls | 500 | 10,000 | 100,000 | Unlimited |
-| A2A Tokens | 100 | 1,000 | 10,000 | Unlimited |
-| Support | Community | Email | Priority | Dedicated |
+Countersig pricing is presented as Developer and Production:
 
-Start free. Upgrade when you need scale.
+| Tier | Price | Fit |
+|---|---|---|
+| Developer | Free for prototyping and side projects | Self-serve setup for small teams and early builds |
+| Production | Starts at $30K/year | Live deployments, compliance workflows, and full CounterAegis path |
+
+Production scoping call:
+`https://calendly.com/ccie14019/enterprise-consultation`
 
 ## The Bottom Line
 
@@ -151,4 +151,4 @@ Countersig fixes that.
 
 ---
 
-**Get Started:** [countersig.com/signup](https://countersig.com/signup) | [MCP Quick Start](MCP_QUICKSTART.md) | [API Reference](API_REFERENCE.md) | [Developer Guide](DEVELOPER_GUIDE.md)
+**Get Started:** [countersig.com/signup](https://countersig.com/signup) | [counteraegis.com](https://counteraegis.com) | [MCP Quick Start](MCP_QUICKSTART.md) | [API Reference](API_REFERENCE.md) | [Developer Guide](DEVELOPER_GUIDE.md)

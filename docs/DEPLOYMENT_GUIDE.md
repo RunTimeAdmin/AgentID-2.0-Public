@@ -11,7 +11,7 @@ Countersig 2.0 introduces significant platform upgrades over v1:
 - **JWT-based authentication** with access/refresh token rotation and Redis-backed session management
 - **RBAC with org-scoped roles**: viewer, member, manager, admin
 - **User registration and login endpoints** (`POST /auth/register`, `POST /auth/login`, `POST /auth/refresh`)
-- **Stripe billing integration** — requires `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICE_STARTER_ID`, and `STRIPE_PRICE_PROFESSIONAL_ID` environment variables
+- **Developer-first self-serve path** — no Stripe dependency required for current developer prototyping flows
 - **Quota enforcement middleware** — usage-based limits per plan tier
 - **New database tables**: `organizations`, `users`, `api_keys`, `audit_logs`, `webhooks`, `policies`, `org_plans`, `billing_events`
 - **Docker Compose deployment** with Caddy for automatic TLS (recommended over bare-metal Nginx)
@@ -72,11 +72,8 @@ JWT_SECRET=<64-char-hex-secret>
 CORS_ORIGIN=https://countersig.com
 COUNTERSIG_BASE_URL=https://api.countersig.com
 
-# Stripe (if billing enabled)
-STRIPE_SECRET_KEY=sk_live_...
-STRIPE_WEBHOOK_SECRET=whsec_...
-STRIPE_PRICE_STARTER_ID=price_...
-STRIPE_PRICE_PROFESSIONAL_ID=price_...
+# Production scoping
+COUNTERAEGIS_SCOPING_URL=https://calendly.com/ccie14019/enterprise-consultation
 
 # Google OAuth
 GOOGLE_CLIENT_ID=<your-google-client-id>.apps.googleusercontent.com
@@ -205,11 +202,8 @@ BADGE_CACHE_TTL=60
 CHALLENGE_EXPIRY_SECONDS=300
 VERIFIED_THRESHOLD=70
 
-# Stripe billing (optional)
-STRIPE_SECRET_KEY=sk_live_...
-STRIPE_WEBHOOK_SECRET=whsec_...
-STRIPE_PRICE_STARTER_ID=price_...
-STRIPE_PRICE_PROFESSIONAL_ID=price_...
+# Production scoping
+COUNTERAEGIS_SCOPING_URL=https://calendly.com/ccie14019/enterprise-consultation
 EOF
 ```
 
@@ -640,7 +634,7 @@ curl http://localhost:3002/discover
 - [ ] PM2 process monitoring is active (bare-metal) or Docker restart policies set
 - [ ] Security headers are in place (Nginx or Caddy)
 - [ ] JWT_SECRET is a strong 64-character hex string
-- [ ] Stripe webhook secret is configured (if billing enabled)
+- [ ] Production scoping URL is configured for handoff (`COUNTERAEGIS_SCOPING_URL`)
 
 ---
 
