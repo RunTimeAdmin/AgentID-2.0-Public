@@ -155,10 +155,11 @@ Now live on npm:
 
 | Package | Version | Install | Description |
 |---------|---------|---------|-------------|
-| [@countersig/sdk](https://www.npmjs.com/package/@countersig/sdk) | 1.0.0 | `npm install @countersig/sdk` | TypeScript SDK for all Countersig operations |
-| [@countersig/mcp](https://www.npmjs.com/package/@countersig/mcp) | 1.0.0 | `npm i -g @countersig/mcp` | MCP server for Claude Code / Claude Desktop |
-| @countersig/verify | 1.0.0 | `npm install @countersig/verify` | Lightweight A2A token verification |
-| [@countersig/react](https://www.npmjs.com/package/@countersig/react) | 1.0.1 | `npm install @countersig/react` | React components — trust badges, reputation displays, capability lists |
+| [@countersig/sdk](https://www.npmjs.com/package/@countersig/sdk) | 1.0.2 | `npm install @countersig/sdk` | TypeScript SDK for all Countersig operations |
+| [@countersig/mcp](https://www.npmjs.com/package/@countersig/mcp) | 1.0.2 | `npm i -g @countersig/mcp` | MCP server for Claude Code / Claude Desktop |
+| @countersig/verify | 1.0.2 | `npm install @countersig/verify` | Lightweight A2A token verification |
+| [@countersig/react](https://www.npmjs.com/package/@countersig/react) | 1.0.2 | `npm install @countersig/react` | React components — trust badges, reputation displays, capability lists |
+| [@countersig/policy-client](https://www.npmjs.com/package/@countersig/policy-client) | 0.1.1 | `npm install @countersig/policy-client` | Client-side policy bundle evaluation for SDK enforcement |
 
 ### Quick Start with Claude
 

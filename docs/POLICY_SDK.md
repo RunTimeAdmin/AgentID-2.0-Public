@@ -3,8 +3,8 @@
 Client-side policy enforcement for AI agents. Wraps outbound HTTP calls and enforces destination policy from cryptographically signed bundles.
 
 **Author:** David Cooper (CCIE #14019)  
-**Version:** 0.1.0  
-**Last Updated:** April 2026
+**Version:** 0.1.1  
+**Last Updated:** May 2026
 
 ---
 
