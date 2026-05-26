@@ -245,7 +245,7 @@ What's pending:
 
 - `SCHEMA_CHANGELOG.md` in CounterAudit (packet schema evolution)
 - `docs/COUNTERAEGIS_MASTER_GUIDE.md` (the master operational reference)
-- `docs/FOUNDERS_EXPERT_TRAINING_PLAN.md` (founder cold-expert certification program)
+- `docs/COUNTERAEGIS_FOUNDER_CERTIFICATION_BOOK.md` (complete founder certification — single document)
 - `docs/ENTERPRISE_TEST_RUNBOOK.md` (CI smoke gate)
 - `docs/INTEGRATIONS_SUMMARY.md` (cross-repo specifics)
 - `docs/PRICING_INTERNAL.md` (internal quoting guideline; NEVER publish)
