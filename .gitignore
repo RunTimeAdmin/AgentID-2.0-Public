@@ -12,3 +12,4 @@ frontend/dist.zip
 *.tar
 frontend-dist.tar
 debug.log
+.qoder/
